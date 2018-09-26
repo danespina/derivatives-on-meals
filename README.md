@@ -7,6 +7,7 @@ Derivatives Or Meals is a simple JavaScript library that provides convenient met
 `::extend`
 
 ## DOMNodeCollection Methods
+
 -`#html`
 -`#empty`
 -`#append`
