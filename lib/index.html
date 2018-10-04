@@ -4,53 +4,25 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./jquery_lite.js"></script>
+    <script type="text/javascript" src="./derivs_on_meals.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   </head>
   <body>
-    <div class="div-1">
-        <a href="#">Link one</a>
-        <a href="#">Link 2</a>
-        <ul>
-          <li>
-            <a href="#">ul Link C</a>
-          </li>
-          <li>
-            <a href="#">Link IV</a>
-          </li>
-        </ul>
-    </div>
-
-    <div class="div-b">
-      <ol>
-        <li>
-          <a href="#">Ordered link</a>
-        </li>
-      </ol>
-    </div>
-
     <div class="math-div">
       <h1>Derivatives!</h1>
+      <p>Enter a polynomial term by term!</p>
       <form class="math-form" action="index.html" method="post">
-        <label for="input">Input
+        <input type="submit" name="Click" value="Take Derivative">
+        <label for="input">c
           <input type="text" name="input" value="">
         </label>
-        <label for="input-2">Input 2
-          <input type="text" name="input-2" value="">
-        </label>
-        <input type="submit" name="Click" value="click">
       </form>
       <button class="add-term">Add term!</button>
-      <button>Take deriv!</button>
+      <button class="make-graph">Make graph!</button>
     </div>
     <h1>On!</h1>
     <div class="meals-div">
       <h1>Meals!</h1>
-      <form class="meals-form" action="index.html" method="post">
-        <label for="ingredients">Ingredients
-          <input type="text" name="ingredients" value="">
-        </label>
-        <input type="submit" name="meals-submit" value="Get meals!">
-      </form>
       <button type="button" name="button" class="meals-button">Meals!</button>
     </div>
 
