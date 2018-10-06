@@ -5,13 +5,21 @@
     <title>Derivatives On Meals!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./derivs_on_meals.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css">
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link href="https://fonts.googleapis.com/css?family=Hi+Melody" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <div class="math-div">
       <h1>Derivatives!</h1>
-      <p>Enter a polynomial term by term!</p>
+      <p>
+        Use the "Add term" button to increase the number of input fields.
+        Then enter a polynomial term by term.  Click "Take Derivative" to find your polynomial's derivative.
+        Click "Make graph" to plot your results in the window for x in (0, 50).
+      </p>
+      <button class="add-term">Add term!</button>
       <form class="math-form" action="index.html" method="post">
         <input type="submit" name="Click" value="Take Derivative">
         <label for="input">
@@ -19,7 +27,6 @@
           c
         </label>
       </form>
-      <button class="add-term">Add term!</button>
       <button class="make-graph">Make graph!</button>
     </div>
     <h1>On!</h1>
