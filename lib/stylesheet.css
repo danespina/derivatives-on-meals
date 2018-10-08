@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0 auto;
+  padding: 20px;
   max-width: 960px;
   display: flex;
   flex-direction: column;
@@ -30,5 +31,5 @@ body {
   max-width: 800px;
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px #888888;
+  box-shadow: 5px 5px 5px 5px #888888;
 }
