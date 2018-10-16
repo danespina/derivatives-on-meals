@@ -26,10 +26,42 @@ body {
 
 .math-div, .meals-div {
   margin: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  max-width: 800px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.contact-info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 40px;
+}
+
+.contact-info a {
+  color: #010106;
+  padding: 10px;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: none;
+}
+
+.contact-info a:hover {
+  color: blue;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 10px;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
