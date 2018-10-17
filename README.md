@@ -30,6 +30,18 @@ Function.prototype.ajax = function (arg) {
 
 - `::extend`
 
+```JavaScript
+Function.prototype.extend = function (...args) {
+  let hash = {};
+  args.forEach( (el) => {
+    Object.keys(el).forEach((key) => {
+      hash[key] = el[key];
+    });
+  });
+  return hash;
+};
+```
+
 ## DOMNodeCollection Methods
 
 - `#html`
@@ -45,4 +57,25 @@ Function.prototype.ajax = function (arg) {
 - `#on`
 - `#off`
 
-With more details to come
+## Live Demo
+
+The live demo makes use of the library to take a user-given polynomial and return the derivative.  The below snippet finds the derivative of the user's function:
+
+```JavaScript
+function takeDeriv(e) {
+  e.preventDefault();
+  let coeffs = [];
+  let deriv = [];
+  const results = window.$l('.deriv-results');
+  for (let i = 0; i < e.currentTarget.length; i++) {
+    if (e.currentTarget[i].value !== 'Take Derivative') {
+      coeffs.push(parseFloat(e.currentTarget[i].value) * (i - 1));
+      deriv.push(`${parseFloat(e.currentTarget[i].value) * (i - 1)} ${(i > 2) ? `x<sup>${i - 2}</sup>` : ''}`);
+    }
+  }
+  const derivString = deriv.slice(1).join(' + ');
+  results.empty();
+  results.append(`<h3 class="coeffs">${coeffs}</h3>`);
+  results.append(`<h3 class="deriv-string">${derivString}</h3>`);
+}
+```
