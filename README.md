@@ -4,7 +4,7 @@ Derivatives Or Meals is a simple JavaScript library that provides convenient met
 
 ## API
 
-- `::ajax`
+- `::ajax` - A method for making AJAX calls
 
 ```JavaScript
 Function.prototype.ajax = function (arg) {
@@ -28,7 +28,7 @@ Function.prototype.ajax = function (arg) {
 };
 ```
 
-- `::extend`
+- `::extend` - A method for merging and extending objects
 
 ```JavaScript
 Function.prototype.extend = function (...args) {
