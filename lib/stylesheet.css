@@ -65,3 +65,11 @@ footer {
   justify-content: space-between;
   align-items: baseline;
 }
+
+.coeffs {
+  display: none;
+}
+
+.deriv-string {
+  font-family: 'Hi Melody', cursive;
+}
