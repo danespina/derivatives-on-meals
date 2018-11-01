@@ -13,6 +13,16 @@ body {
   align-items: center;
 }
 
+ul {
+  list-style: none;
+}
+
+button, input[type="submit"] {
+  width: 140px;
+  height: 60px;
+  border-radius: 10px;
+}
+
 .math-form {
   font-family: 'Hi Melody', cursive;
   font-size: 20px;
@@ -41,7 +51,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  list-style: none;
   font-size: 40px;
 }
 
